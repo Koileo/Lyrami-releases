@@ -15,7 +15,7 @@
 
 Lyrami 将账号登录、玩家卡展示、成绩分析、数据同步与本机存档管理集中在一个原生应用中，使用 Rust + NSH 构建。**安装后无需 Python、Node.js 或独立后端，也不用先启动开发服务。**
 
-本仓库是 Lyrami 的**公开发行入口**，用于分发安装包、更新元数据和对应版本源码归档，不是日常开发仓库。
+本仓库是 Lyrami 的**公开发行入口**，用于分发安装包、更新元数据。
 
 > [!WARNING]
 > 仅操作本人或明确获授权的账号。成绩上传、解锁、购票、跑图和迁移会真实修改服务器数据，可能不可撤销，并存在封禁、覆盖或异常成绩风险。请先核对预检内容，确认后再提交；结果未知时先回查，不要重复操作。
@@ -47,12 +47,6 @@ Lyrami 将账号登录、玩家卡展示、成绩分析、数据同步与本机�
 | Android | 解压 `Lyrami-android-…-distribution.tar.gz`，取出 APK，通过系统安装器安装 | Android 8 / API 26+；AAB 不能直接安装 |
 | iOS | 下载 `Lyrami-ios-UNSIGNED.ipa`，自行签名后安装；若提供已签名版本，按其授权渠道安装 | iOS 15+；有效的签名证书、描述文件与设备授权 |
 
-**不要下载错文件：**
-
-- `Lyrami-macos-update.tar.gz` 是 macOS 更新归档，首次安装优先选择 DMG。
-- `Lyrami-source.tar.gz` 是该版本的对应源码，不是安装包。
-- GitHub 自动附带的 **Source code (zip / tar.gz)** 只是本发行仓库的快照，不是应用源码；需要应用源码时，请选 `Lyrami-source.tar.gz`。
-- `SHA256SUMS`、`Lyrami-<平台>-SHA256SUMS` 和 `Lyrami-<平台>-release.json` 用于校验与核对构建信息，不是安装包。
 
 ## 首次使用
 
